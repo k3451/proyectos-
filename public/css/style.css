@@ -1,0 +1,137 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
+    margin: 0; /* Eliminar margen predeterminado del body */
+    padding: 0; /* Eliminar padding predeterminado del body */
+  }
+  
+  /* Contenedor principal */
+  .container {
+    width: 90%; /* El contenido ocupará el 90% del ancho de la pantalla */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 20px; /* Agrega espacio interno alrededor del contenido */
+    max-width: 1200px; /* Limitar el ancho máximo del contenedor */
+  }
+  
+  /* Encabezado */
+  header {
+    background-color: #0d6efd;
+    padding: 20px 0;
+    text-align: center;
+  }
+  /* Menú de navegación */
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #343a40;
+    padding: 10px 0;
+  }
+  
+  nav a {
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #0d6efd;
+    transform: scale(1.1);
+  }
+  
+  /* Sección principal */
+  main {
+    padding: 40px 20px; /* Añadir relleno para crear espacio en el contenido */
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffcc00;
+  }
+  
+  /* Sección destacada */
+  section.featured {
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos de las cards */
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px;
+    width: 300px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-content h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .card-content p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  /* Media Queries para dispositivos móviles */
+  @media (max-width: 768px) {
+    .container {
+      width: 95%; /* Ajusta el ancho del contenedor en pantallas pequeñas */
+    }
+  
+    header h1 {
+      font-size: 2.5rem;
+    }
+  
+    nav {
+      flex-direction: column;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  
+    button {
+      width: 100%;
+      padding: 12px;
+    }
+  }
+  
